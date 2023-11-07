@@ -1,0 +1,115 @@
+
+<!doctype html>
+<html>
+<head>
+<title>여행일기-welcome</title>
+<meta charset="utf-8">
+<style>
+    body{
+        margin:0;
+    }
+    a{
+        color:black;
+        text-decoration:none;
+    }
+    #active{
+        color:red;
+    }
+
+    .saw {
+        color:black;
+    }
+  
+    h1{ 
+        font-size:45px;
+        text-align:center;
+        border-bottom:1px solid black;
+        margin:0;
+        padding:20px;
+    }
+
+    #grid ol{
+        border-right:1px solid gray;
+        width:80px;
+        margin:0;
+        padding:40px;
+    }
+
+    #grid{
+            display: grid;
+            grid-template-columns:150px 1fr;
+
+    }
+   #grid #article{
+        padding-left:30px;
+    }
+</style>
+
+</head>
+
+<body>
+    
+<h1><a href="index.html" style="color:black">세계여행을 기록하는 공간</a></h1>
+ 
+<div id="grid">
+  
+        <ol>
+            <li><a href="1.html" class="saw">여행 <u>vlog</u></a> </li>
+            <li><a href="2.html" class="saw" id="active">여행 <u>diary</u></a></li>
+            <li><a href="3.html">여행 사진</a></li>
+            <li><a href="4.html">속닥속닥</a></li>
+            <li><a href="5.html">베스트 글</a></li>
+        </ol>
+
+
+<!----
+    <h1><a href="index.html">세계여행을 기록하는 공간</a></h1>
+    
+    <ul>
+        <ol>
+            <li><a href="1.html">여행 <u><strong><font color="pink">vlog</font></strong></u></a> </li>
+            <li><a href="2.html">여행 <u>diary</u></a></li>
+            <li><a href="3.html">여행 사진</a></li>
+            <li><a href="4.html">베스트 글</a></li>
+            <li><a href="5.html">Q&A</a></li>
+        </ol>
+    </ul>
+<ul>
+-->
+   
+
+
+    <div id="article">
+        <h2>세계여행 거 별거 없네?!</h2>
+
+        <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        ">
+        <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        ">
+        <p>이 사이트는 <u>여행</u>을 좋아하는 분들이 본인의 <a href="https://unsplash.com/ko" 
+            target="_blank" title="여행 사진들" >여행기록</a>을 남기거나, <br>여행에 관한 조언을 얻고자 할 때
+        도움을 주기 위해 만들어진 사이트입니다~<br>
+        아래의 동영상은 대표적인 여행 VLOG 영상입니다:) 한 번 시청해보세요~!
+        </p>
+
+        <p style="margin-top:40px;"> 이 사이트는 아래와 같은 기능들을 가지고 있습니다.</p>
+        <input type="checkbox"> 여행을 함께 갈 사람들을 만날 수 있다. <br>
+        <input type="checkbox"> 자신의 여행을 기록할 수 있다. <br>
+        <img src="picture.jpg" width="45%"> <img src="picture2.jpg" width="45%">
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/40myWE-7Yao?si=GMc8wcgr6d-muwzG" 
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    </div>
+</div>
+</body>
+</html>
+
+
+
